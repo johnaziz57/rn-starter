@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "outDir": "./built",
+      "jsx": "react",
+      "allowJs": true, //TODO change that
+      "target": "es5",
+      "noImplicitAny": false,
+      "strict": true
+    },
+    "include": ["./src/**/*"]
+  } 
