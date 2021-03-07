@@ -1,17 +1,21 @@
 import React from "react"
-import { Text, StyleSheet, View, Button } from "react-native";
+import { Text, StyleSheet, View, Button, Image, ImageSourcePropType } from "react-native";
 
 
 interface ImageDetailProps {
   readonly title: string;
-  readonly image?: string
+  readonly imagePath?: ImageSourcePropType;
+  readonly score: string
 }
 
 const ImageDetail = (props: ImageDetailProps) => {
-  console.log(props.title);
-  
+  const { title, imagePath, score } = props
   return (
-    <Text>123</Text>
+    <>
+      {imagePath && <Image source={imagePath}/>}
+      <Text>{title}</Text>
+      <Text>{score}</Text>
+    </>
   );
 };
 

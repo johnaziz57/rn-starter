@@ -1,11 +1,21 @@
+// /* {
+//     "compilerOptions": {
+//       "esModuleInterop": true,
+//       "outDir": "./built",
+//       "jsx": "react",
+//       "allowJs": true, //TODO change that
+//       "target": "es5",
+//       "noImplicitAny": true,
+//     },
+//     "include": ["./src/**/*", "./assets"]
+//   }  */
 {
-    "compilerOptions": {
-      "outDir": "./built",
-      "jsx": "react",
-      "allowJs": true, //TODO change that
-      "target": "es5",
-      "noImplicitAny": false,
-      "strict": true
-    },
-    "include": ["./src/**/*"]
-  } 
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  }
+}
