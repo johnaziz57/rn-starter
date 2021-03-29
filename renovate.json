@@ -1,0 +1,7 @@
+{
+  "labels": ["dependencies"],
+  "additionalBranchPrefix": "renovate/",
+  "prConcurrentLimit": "2",
+  "includePaths": ["**/package.json"],
+  "extends": ["config:base"]
+}
